@@ -1,0 +1,16 @@
+#versão do composer
+version: "2"
+#serviço da aplicação
+services: 
+    nodejs:
+        #Localização do dockerfile dessa aplicação (nome da imagem)
+        build: 
+            context: ./
+        container_name: integracao_nodejs
+        #Redirecionamento de portas
+        ports:
+            - "80:3000"
+        #Qual pasta refletir as alterações 
+        volumes: 
+            - ./integracao.nodejs/mp-ecommerce-nodejs/:/usr/app/
+
