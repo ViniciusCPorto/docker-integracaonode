@@ -44,19 +44,18 @@ $ cd docker-integracaonode
 5. To start the repository container, use the command:
 
 ```
-$ docker-compose up
+$ docker-compose up --build
 ```
 
 
-6. access your browser and search for `localhost`. Done! you are inside the repository locally.
+6. Go to your browser and access `localhost`.
 
 
-```
-$ docker-compose down
-```
+7. Done!
+
 ### Extra
 
-* Obs. If you need stop the container, use the comand:
+Note: if you need stop the container, use the comand:
 
 ```
 $ docker-compose down
